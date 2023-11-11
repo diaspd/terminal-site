@@ -1,0 +1,25 @@
+import { Compiler } from "@/components/compiler"
+
+import { CertificatesContent } from "./certificates-content"
+
+export const metadata = {
+	title: "Certificates",
+}
+
+export default function Certificates() {
+	return (
+		<>
+			<Compiler />
+
+			<main className="flex items-center justify-start mt-5 gap-4 max-w-fit p-4">
+				<div className="bg-gray-800 rounded-md ml-10 p-4">
+					<span className="text-xl font-semibold">Certificates online:</span>
+
+					<div className="grid space-y-5">		
+						<CertificatesContent /> 
+					</div>
+				</div>
+			</main>
+		</>
+	)
+}
