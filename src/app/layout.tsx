@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 	icons: {
 		icon: "https://github.com/diaspd.png"
 	},
-	metadataBase: new URL("terminal.png", "https://pedro-dias.vercel.app/"),
+	metadataBase: new URL("https://pedro-dias.vercel.app/"),
 	description:
 	"My personal website for people discover more about me Pedro Dias, hope you enjoy !! #react #reactjs #pedrodiasreactjs #reactnative #javascript #js #nodejs #frontend #backend #fullstack #mobile #AI",
 }
