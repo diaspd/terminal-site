@@ -12,7 +12,7 @@ export interface PostGithubProps {
 export default async function Github() {
 	const response = await fetch("https://api.github.com/users/diaspd/repos", {
 		next: {
-			revalidate: 60 * 60 * 24, // 24 hours
+			revalidate: 60 * 60 * 72, // 72 hours
 		},
 	})
 
