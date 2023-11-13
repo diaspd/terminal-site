@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="./public/plain-logo.svg" alt="project logo" title="project logo" />
+  <img src="./public/plain-logo.svg" alt="project logo" title="project logo" height="30px" />
 </h1> 
 
 <h2 align="center">Link to site online: <a href="https://pedro-dias.vercel.app/" target="_blank">Terminal Site</a> </h2>
