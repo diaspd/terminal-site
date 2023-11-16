@@ -31,12 +31,10 @@ This project was developed with the following technologies:
 <br></br>
 
 ## 🔖 Layout
-- [Personal Site - Figma](https://www.figma.com/file/jDW8u7N3EpoZEp5HxuIHEY/Personal-Site?type=design&node-id=1-3&mode=design&t=ddsFa3XR33fJFxXL-0)
+- [Terminal Site - Figma](https://www.figma.com/file/jDW8u7N3EpoZEp5HxuIHEY/Personal-Site?type=design&node-id=1-3&mode=design&t=ddsFa3XR33fJFxXL-0)
 
 </br>
 
 Made with ♥ by Pedro Dias. 👋 Follow me on social media! 
-
-</br>
 
 If you can give a little star, I appreciate it 🤩
