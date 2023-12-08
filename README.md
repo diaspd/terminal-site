@@ -20,7 +20,7 @@
 
 This project was developed with the following technologies:
 <b>
-- Next
+- Nextjs
 </b>
 
 </br>
