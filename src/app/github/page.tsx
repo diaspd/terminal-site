@@ -38,7 +38,7 @@ export default async function Github() {
 				</div>
 			</main>
 
-			<footer className="ml-10 grid items-center justify-start mt-4 gap-2 p-4">
+			<footer className="ml-12 grid items-center justify-start mt-4 gap-2 p-4">
 				<p className="text-xl">Here&apos;s some of my repositories:</p>
 
 				<div role="document" tabIndex={0} className="overflow-y-scroll scrollbar-thin scrollbar-track-transparent scrollbar-thumb-white h-44 focus-visible:ring-2 focus-visible:ring-zinc-200 focus-visible:ring-offset-0 rounded-md">
