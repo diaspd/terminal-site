@@ -6,7 +6,7 @@ export const metadata = {
 	title: "Certificates",
 }
 
-export default function Certificates() {
+export default async function Certificates() {
 	return (
 		<>
 			<Compiler />
