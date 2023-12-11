@@ -10,7 +10,7 @@ export function KnowledgeContent() {
 				type="single"
 				defaultValue="item-1"	
 				collapsible
-				className="bg-gray-800 rounded-md ml-10 p-4 w-1/2"
+				className="bg-gray-800 rounded-md ml-10 p-4 lg:w-1/2 w-full"
 			>
 				<Accordion.Item className="AccordionItem" value="item-1">
 					<Accordion.Trigger className="text-xl flex items-center gap-2 font-semibold text-gray-200 hover:text-gray-500 transition-all duration-500 rounded border-2 border-gray-800 focus-visible:border-gray-500 group">

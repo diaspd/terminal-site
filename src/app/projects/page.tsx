@@ -12,7 +12,7 @@ export default function Projects() {
 			<Compiler />
 
 			<main className="flex items-center justify-start max-w-fit p-4">
-				<div className="bg-gray-800 rounded-md ml-10 px-12 lg:px-4 py-4">
+				<div className="bg-gray-800 rounded-md ml-11 px-12 lg:px-4 py-4">
 					<span className="text-xl font-semibold">Projects online:</span>
 					{/* <p className="text-xl mt-3 text-gray-200 hover:text-gray-600 transition-all duration-500 hover:translate-y-2">
 							<Link target="_blank" href="">
