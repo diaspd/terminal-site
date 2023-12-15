@@ -44,7 +44,7 @@ export default async function Github() {
 				<div role="document" tabIndex={0} className="overflow-y-scroll scrollbar-thin scrollbar-track-transparent scrollbar-thumb-white h-44 focus-visible:ring-2 focus-visible:ring-zinc-200 focus-visible:ring-offset-0 rounded-md">
 					{repositories.map((repos: PostGithubProps) => (
 						<p
-							className="bg-gray-800 rounded-md p-2 mt-2 mr-4"
+							className="bg-zinc-800 rounded-md p-2 mt-2 mr-4"
 							key={repos.name}
 						>
                 🔘 {repos.name}
