@@ -16,7 +16,7 @@ export function Content({title, description, url, photoUrl}: ContentProps) {
 		<Dialog.Portal>
 			<Dialog.Overlay className="data-[state=open]:animate-overlayShow fixed inset-0 backdrop-blur-md" />
 			
-			<Dialog.Content className="data-[state=open]:animate-contentShow fixed top-[50%] text-white left-[50%] max-h-[50vh] w-11/12 lg:max-w-3xl translate-x-[-50%] translate-y-[-50%] rounded bg-gray-800 p-6 divide-y-2 overflow-auto md:max-h-[60vh] scrollbar-thin scrollbar-track-transparent scrollbar-thumb-zinc-100">
+			<Dialog.Content className="data-[state=open]:animate-contentShow fixed top-[50%] text-white left-[50%] max-h-[50vh] w-11/12 lg:max-w-3xl translate-x-[-50%] translate-y-[-50%] rounded bg-zinc-800 p-6 divide-y-2 overflow-auto md:max-h-[60vh] scrollbar-thin scrollbar-track-transparent scrollbar-thumb-zinc-100">
 
 				<header className="bg-clip-border divide-zinc-100 border-zinc-50 pb-5 h-full">
 					<Image width={600} height={400} src={photoUrl} alt="" priority className="w-11/12 h-96 hidden lg:flex" />
@@ -31,11 +31,11 @@ export function Content({title, description, url, photoUrl}: ContentProps) {
         Link to Certificate:
 					</p>
 					{url ? (
-						<Link className="font-semibold whitespace-nowrap text-xl rounded border-2 border-gray-800 focus:border-gray-500 hover:text-gray-600 transition-all duration-500" target="_blank" href={url}>
+						<Link className="whitespace-nowrap text-xl rounded border-2 border-zinc-800 focus:border-zinc-500 hover:text-zinc-600 transition-all duration-500" target="_blank" href={url}>
 							{title}
 						</Link>
 					): (
-						<p className="font-semibold select-none whitespace-nowrap text-xl rounded border-2 border-gray-800 focus:border-gray-500">
+						<p className="select-none whitespace-nowrap text-xl rounded border-2 border-zinc-800 focus:border-zinc-500">
 							{title}
 						</p>  
 					)}

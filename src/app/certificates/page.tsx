@@ -12,8 +12,8 @@ export default async function Certificates() {
 			<Compiler />
 
 			<main className="flex items-center justify-start mt-5 gap-4 max-w-fit p-4">
-				<div className="bg-gray-800 rounded-md ml-10 p-4">
-					<span className="text-xl font-semibold">Certificates online:</span>
+				<div className="bg-zinc-800 rounded-md ml-10 p-4">
+					<span className="text-xl">Certificates online:</span>
 
 					<div className="grid space-y-5">		
 						<CertificatesContent /> 
