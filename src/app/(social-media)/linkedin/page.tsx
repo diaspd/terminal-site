@@ -16,7 +16,7 @@ export default function LinkedIn() {
 					<span className="text-xl">
               To access my LinkedIn use this link: {" "}
 						<Link
-							className="font-semibold hover:text-gray-600 rounded transition-all duration-500 border-2 border-transparent focus-visible:border-gray-500"
+							className="font-semibold hover:text-zinc-600 rounded transition-all duration-500 border-2 border-transparent focus-visible:border-zinc-500"
 							href="https://www.linkedin.com/in/pedro-diasr/"
 							target="blank"
 						>

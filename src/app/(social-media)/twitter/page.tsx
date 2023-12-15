@@ -17,7 +17,7 @@ export default function Twitter() {
 					<span className="text-xl">
               To access my Twitter use this link: {" "}
 						<Link
-							className="font-semibold border-2 border-transparent hover:text-gray-600 transition-all duration-500 rounded focus-visible:border-gray-500"
+							className="font-semibold border-2 border-transparent hover:text-zinc-600 transition-all duration-500 rounded focus-visible:border-zinc-500"
 							href="https://twitter.com/diaspdr_1"
 							target="blank"
 						>

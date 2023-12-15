@@ -25,7 +25,7 @@ export function Header() {
 						href="/"
 						title="go back"
 						aria-label="go back"
-						className="text-gray-100 rounded border-2 border-zinc-900 focus-visible:border-gray-500 hover:text-slate-500 transition-all duration-300"
+						className="text-zinc-100 rounded border-2 border-zinc-900 focus-visible:border-zinc-500 hover:text-slate-500 transition-all duration-300"
 					>
 						<ArrowLeft weight="bold" className="h-6 w-6"/>
 					</Link>

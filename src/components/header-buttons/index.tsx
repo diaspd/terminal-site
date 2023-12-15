@@ -27,7 +27,7 @@ export function HeaderButtons() {
        hover:bg-red-700
        transition-all
        duration-500
-       focus-within:border-gray-300 focus-within:ring-2 focus-within:ring-zinc-200 
+       focus-within:border-zinc-300 focus-within:ring-2 focus-within:ring-zinc-200 
        "
 			/>
 
@@ -38,7 +38,7 @@ export function HeaderButtons() {
        hover:bg-yellow-600  
        transition-all
        duration-500
-       focus-within:border-gray-300 focus-within:ring-2 focus-within:ring-zinc-200 
+       focus-within:border-zinc-300 focus-within:ring-2 focus-within:ring-zinc-200 
        "
 			/>
 
@@ -50,7 +50,7 @@ export function HeaderButtons() {
        hover:bg-lime-600  
        transition-all
        duration-500
-       focus-within:border-gray-300 focus-within:ring-2 focus-within:ring-zinc-200 
+       focus-within:border-zinc-300 focus-within:ring-2 focus-within:ring-zinc-200 
        "
 			/>
 		</div>

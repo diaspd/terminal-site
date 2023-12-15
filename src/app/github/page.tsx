@@ -28,7 +28,7 @@ export default async function Github() {
 					<span className="text-xl">
               To access my git hub use this link:
 						<Link
-							className="font-semibold ml-2 rounded border-2 border-transparent focus-visible:border-gray-500 hover:text-gray-600 transition-all duration-500"
+							className="font-semibold ml-2 rounded border-2 border-transparent focus-visible:border-zinc-500 hover:text-zinc-600 transition-all duration-500"
 							href="https://github.com/diaspd"
 							target="blank"
 						>

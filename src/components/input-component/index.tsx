@@ -92,7 +92,7 @@ export function InputComponent() {
 				{...register("input")}
 				type="text"
 				required
-				className="bg-transparent dark:invisible animate-pulse valid:animate-none valid:border-0 focus-within:border-0 h-8 border-gray-200 border-l-4 text-2xl font-regular w-5/6 text-white"
+				className="bg-transparent dark:invisible animate-pulse valid:animate-none valid:border-0 focus-within:border-0 h-8 border-zinc-200 border-l-4 text-2xl font-regular w-5/6 text-white"
 			/>
 
 			<datalist id="search-suggestions">
