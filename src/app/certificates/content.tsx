@@ -27,13 +27,16 @@ export function Content({title, description, url, photoUrl}: ContentProps) {
 				</header>
 
 				<div className="mb-6 lg:flex grid gap-3 py-2 pt-5">
-					<p className="w-full text-left text-xl whitespace-nowrap">
-        Link to Certificate:
-					</p>
 					{url ? (
-						<Link className="whitespace-nowrap text-xl rounded border-2 border-zinc-800 focus:border-zinc-500 hover:text-zinc-600 transition-all duration-500" target="_blank" href={url}>
-							{title}
-						</Link>
+						<>
+							<p className="w-full text-left text-xl whitespace-nowrap">
+								Link to Certificate:
+							</p>
+
+							<Link className="whitespace-nowrap text-xl rounded border-2 border-zinc-800 focus:border-zinc-500 hover:text-zinc-600 transition-all duration-500" target="_blank" href={url}>
+								{title}
+							</Link>
+						</>
 					): (
 						<p className="select-none whitespace-nowrap text-xl rounded border-2 border-zinc-800 focus:border-zinc-500">
 							{title}
