@@ -16,7 +16,7 @@ export default function Instagram() {
 					<span className="text-xl">
               To access my Instagram use this link: {" "}
 						<Link
-							className="font-semibold hover:text-zinc-600 transition-all rounded duration-500 border-2 border-transparent focus-visible:border-zinc-500"
+							className="font-semibold inline-block hover:translate-y-2 hover:text-zinc-600 transition-all rounded duration-500 border-2 border-transparent focus-visible:border-zinc-500"
 							href="https://www.instagram.com/dias_pdr/"
 							target="blank"
 						>
