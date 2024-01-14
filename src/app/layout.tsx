@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 	},
 	metadataBase: new URL("https://pedro-dias.vercel.app/"),
 	description:
-	"My personal website for people discover more about me Pedro Dias, hope you enjoy !! #react #reactjs #pedrodiasreactjs #reactnative #javascript #js #nodejs #frontend #backend #fullstack #mobile #AI",
+	"My personal website for people discover more about me Pedro Dias, hope you enjoy !! react reactjs pedrodiasreactjs reactnative javascript js nodejs frontend backend fullstack mobile AI pedro dias reactjs",
 }
 
 export default function RootLayout({children}: { children: React.ReactNode}) {
