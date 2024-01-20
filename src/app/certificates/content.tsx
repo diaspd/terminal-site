@@ -25,6 +25,7 @@ export function Content({title, description, url, photoUrl}: ContentProps) {
 						height={400} 
 						alt="" 
 						draggable="false"
+						loading="eager"
 						priority 
 						className="w-11/12 h-96 hidden lg:flex" 
 					/>
