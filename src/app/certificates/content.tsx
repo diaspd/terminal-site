@@ -24,10 +24,10 @@ export function Content({title, description, url, photoUrl}: ContentProps) {
 						width={600} 
 						height={400} 
 						alt="" 
-						draggable="false"
+						draggable={false}
 						loading="eager"
 						priority 
-						className="w-11/12 h-96 hidden lg:flex" 
+						className="w-11/12 h-96 hidden lg:flex select-none" 
 					/>
 					
 					<Dialog.Close className="absolute top-5 right-5 inline-flex h-6 w-6 appearance-none items-center justify-center rounded-lg focus:shadow-[0_0_0_2px] hover:text-zinc-500 transition-all duration-300" aria-label="Close">
@@ -38,11 +38,11 @@ export function Content({title, description, url, photoUrl}: ContentProps) {
 				<div className="mb-6 lg:flex grid gap-3 py-2 pt-5">
 					{url ? (
 						<>
-							<p className="w-full text-left text-xl whitespace-nowrap">
+							<p className="w-full text-left text-xl whitespace-nowrap select-none">
 								Link to Certificate:
 							</p>
 
-							<Link className="whitespace-nowrap text-xl rounded border-2 border-zinc-800 focus:border-zinc-500 hover:text-zinc-600 transition-all duration-500" target="_blank" href={url}>
+							<Link className="whitespace-nowrap text-xl rounded border-2 border-zinc-800 focus:border-zinc-500 hover:text-zinc-500 transition-all duration-500" target="_blank" href={url}>
 								{title}
 							</Link>
 						</>
@@ -54,7 +54,7 @@ export function Content({title, description, url, photoUrl}: ContentProps) {
 				</div>
 
 				<section className="mb-6 lg:flex grid gap-5 pt-5">
-					<p className="w-full text-left text-xl">
+					<p className="w-full text-left text-xl select-none">
         Learned:
 					</p>
 					<span className="text-white mt-1">

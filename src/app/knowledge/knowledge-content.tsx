@@ -16,7 +16,7 @@ export function KnowledgeContent() {
 					<Accordion.Trigger className="text-xl flex items-center gap-2 font-semibold text-zinc-200 hover:text-zinc-500 transition-all duration-500 rounded border-2 border-zinc-800 focus-visible:border-zinc-500 group">
             Front-end 
 						<div className="group-data-[state=open]:rotate-180 hidden group-hover:flex">
-							<ArrowFatLineDown className="w-4 h-4" />
+							<ArrowFatLineDown className="w-4 h-4 hidden lg:flex" />
 						</div>
 					</Accordion.Trigger>
 					<Accordion.Content className="text-zinc-400 p-2 text-lg select-none">
@@ -29,7 +29,7 @@ export function KnowledgeContent() {
 					<Accordion.Trigger className="text-xl flex items-center gap-2 font-semibold mt-2 text-zinc-200 hover:text-zinc-500 transition-all duration-500 rounded border-2 border-zinc-800 focus-visible:border-zinc-500 group">
             Back-end
 						<div className="group-data-[state=open]:rotate-180 hidden group-hover:flex">
-							<ArrowFatLineDown className="w-4 h-4" />
+							<ArrowFatLineDown className="w-4 h-4 hidden lg:flex" />
 						</div>
 					</Accordion.Trigger>
 					<Accordion.Content className="text-zinc-400 p-2 text-lg select-none">
@@ -41,7 +41,7 @@ export function KnowledgeContent() {
 					<Accordion.Trigger className="text-xl flex items-center gap-2 font-semibold mt-2 text-zinc-200 hover:text-zinc-500 transition-all duration-500 rounded border-2 border-zinc-800 focus-visible:border-zinc-500 group">
             Other Tecnologies
 						<div className="group-data-[state=open]:rotate-180 hidden group-hover:flex">
-							<ArrowFatLineDown className="w-4 h-4" />
+							<ArrowFatLineDown className="w-4 h-4 hidden lg:flex" />
 						</div>
 					</Accordion.Trigger>
 					<Accordion.Content className="select-none text-zinc-400 p-2 text-lg gap-3 hover:text-zinc-500 transition-all duration-500">
@@ -57,7 +57,7 @@ export function KnowledgeContent() {
             Used on Projects Front end & Mobile
 
 						<div className="group-data-[state=open]:rotate-180 hidden group-hover:flex">
-							<ArrowFatLineDown className="w-4 h-4" />
+							<ArrowFatLineDown className="w-4 h-4 hidden lg:flex" />
 						</div>
 					</Accordion.Trigger>
 					<Accordion.Content className="text-zinc-400 p-2 text-lg select-none">
@@ -72,7 +72,7 @@ export function KnowledgeContent() {
 							
             Used on Projects Back end
 						<div className="group-data-[state=open]:rotate-180 hidden group-hover:flex">
-							<ArrowFatLineDown className="w-4 h-4" />
+							<ArrowFatLineDown className="w-4 h-4 hidden lg:flex" />
 						</div>
 					</Accordion.Trigger>
 					<Accordion.Content className="text-zinc-400 p-2 text-lg select-none">
