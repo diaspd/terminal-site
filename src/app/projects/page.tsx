@@ -34,7 +34,7 @@ export default function Projects() {
 							width={800} 
 							height={600} 
 							alt="" 
-							className="w-4/6 h-full rounded hidden group-hover:flex absolute right-2 top-2 object-contain" 
+							className="w-4/6 h-full rounded hidden xl:xl:group-hover:flex absolute right-2 top-2 object-contain" 
 						/>
 					</div>
 
@@ -51,7 +51,7 @@ export default function Projects() {
 							width={800} 
 							height={600} 
 							alt="" 
-							className="w-4/6 h-full rounded hidden group-hover:flex absolute right-2 top-2 object-contain" 
+							className="w-4/6 h-full rounded hidden xl:group-hover:flex absolute right-2 top-2 object-contain" 
 						/>
 					</div>
 
@@ -68,7 +68,7 @@ export default function Projects() {
 							width={800} 
 							height={600} 
 							alt="" 
-							className="w-4/6 h-full rounded hidden group-hover:flex absolute right-2 top-2 object-contain" 
+							className="w-4/6 h-full rounded hidden xl:group-hover:flex absolute right-2 top-2 object-contain" 
 						/>
 					</div>
 
@@ -85,7 +85,7 @@ export default function Projects() {
 							width={800} 
 							height={600} 
 							alt="" 
-							className="w-4/6 h-full rounded hidden group-hover:flex absolute right-2 top-2 object-contain" 
+							className="w-4/6 h-full rounded hidden xl:group-hover:flex absolute right-2 top-2 object-contain" 
 						/>
 					</div>
 
@@ -102,7 +102,7 @@ export default function Projects() {
 							width={800} 
 							height={600} 
 							alt="" 
-							className="w-4/6 h-full rounded hidden group-hover:flex absolute right-2 top-2 object-contain" 
+							className="w-4/6 h-full rounded hidden xl:group-hover:flex absolute right-2 top-2 object-contain" 
 						/>
 					</div>
 				</div>
