@@ -7,12 +7,6 @@ export const metadata = {
 	title: "Projects",
 }
 
-import IgniteCallTemplate from  "../../../public/projects-image/ignite-call.svg"
-import LetMeAskTemplate from  "../../../public/projects-image/let-me-ask.svg"
-import MoveItTemplate from  "../../../public/projects-image/move-it.svg"
-import DesignSystem from  "../../../public/projects-image/design-system.svg"
-import GestureController from  "../../../public/projects-image/gesture-controller.svg"
-
 export default function Projects() {
 	return (
 		<>
@@ -30,11 +24,11 @@ export default function Projects() {
 						</Link>
 
 						<Image 
-							src={IgniteCallTemplate} 
+							src="https://raw.githubusercontent.com/diaspd/ignite-call/main/public/template.svg"
 							width={800} 
 							height={600} 
 							alt="" 
-							className="w-4/6 h-full rounded hidden xl:xl:group-hover:flex absolute right-2 top-2 object-contain" 
+							className="w-4/6 h-full rounded hidden xl:group-hover:flex absolute right-2 top-2 object-contain"  
 						/>
 					</div>
 
@@ -47,7 +41,7 @@ export default function Projects() {
 						</Link>
 
 						<Image 
-							src={LetMeAskTemplate} 
+							src="https://raw.githubusercontent.com/diaspd/let-me-ask/main/public/template.svg"
 							width={800} 
 							height={600} 
 							alt="" 
@@ -64,7 +58,7 @@ export default function Projects() {
 						</Link>
 
 						<Image 
-							src={MoveItTemplate} 
+							src="https://raw.githubusercontent.com/diaspd/move-it/main/public/template.svg"
 							width={800} 
 							height={600} 
 							alt="" 
@@ -81,7 +75,7 @@ export default function Projects() {
 						</Link>
 
 						<Image 
-							src={DesignSystem} 
+							src="https://raw.githubusercontent.com/diaspd/design-system-ignite/main/public/template.png"
 							width={800} 
 							height={600} 
 							alt="" 
@@ -98,7 +92,7 @@ export default function Projects() {
 						</Link>
 
 						<Image 
-							src={GestureController} 
+							src="https://raw.githubusercontent.com/diaspd/gesture-controller/main/template/assets/project.svg"
 							width={800} 
 							height={600} 
 							alt="" 

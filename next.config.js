@@ -2,7 +2,7 @@
 const nextConfig = {
 	images: 
 		{
-			domains: ["app.rocketseat.com.br"]
+			domains: ["raw.githubusercontent.com"]
 		}
 	
 }
