@@ -1,4 +1,5 @@
 import { Compiler } from "@/components/compiler"
+
 import { KnowledgeContent } from "./knowledge-content"
 
 export const metadata = {

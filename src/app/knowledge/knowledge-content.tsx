@@ -1,6 +1,7 @@
 "use client"
 
 import * as Accordion from "@radix-ui/react-accordion"
+
 import { KnowledgeItem } from "./knowledge-item"
 
 export function KnowledgeContent() {

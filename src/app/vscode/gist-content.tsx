@@ -1,4 +1,5 @@
 import shiki from "shiki"
+
 import { CodePreview } from "./code-preview"
 
 interface GistProps {

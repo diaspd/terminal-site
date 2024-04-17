@@ -2,10 +2,9 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { ArrowLeft, TerminalWindow } from "phosphor-react"
 
 import { HeaderButtons } from "../header-buttons"
-
-import { ArrowLeft, TerminalWindow } from "phosphor-react"
 
 export function Header() {
 	const pathname = usePathname()

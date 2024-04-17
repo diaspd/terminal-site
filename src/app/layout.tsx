@@ -3,9 +3,9 @@ import "../styles/globals.css"
 import type { Metadata } from "next"
 import { Prompt } from "next/font/google"
 
-import { ThemeProvider } from "../components/theme-provider"
-
 import { Header } from "@/components/header"
+
+import { ThemeProvider } from "../components/theme-provider"
 
 const prompt = Prompt({ subsets: ["latin"], weight: ["100", "200", "400", "500", "600", "700", "800", "900"], variable: "--font-prompt" })
 

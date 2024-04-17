@@ -1,8 +1,9 @@
 "use client"
 
 import { Check, Copy } from "phosphor-react"
-import { Compiler } from "@/components/compiler"
 import { useState } from "react"
+
+import { Compiler } from "@/components/compiler"
 
 interface CodePreviewProps {
   code: string

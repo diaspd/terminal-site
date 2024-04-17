@@ -1,17 +1,17 @@
 "use client"
 
 import * as Dialog from "@radix-ui/react-dialog"
-import { Content } from "./content"
-import { ButtonTrigger } from "./button-trigger"
 
-import ReactCertificate from "../../../public/certificates-image/react-certificate.jpg"
-import FigmaCertificate from "../../../public/certificates-image/figma-certificate.jpg"
+import A11yCertificate from "../../../public/certificates-image/a11y-certificate.jpg"
+import CS50Certificate from "../../../public/certificates-image/cs50-certificate.jpg"
+import DataAnalytics from "../../../public/certificates-image/data-analytics-certificate.jpg"
 import ElectronCertificate from "../../../public/certificates-image/electron-certificate.jpg"
 import EspecializarCertificate from "../../../public/certificates-image/especializar-certificate.jpg"
-import CS50Certificate from "../../../public/certificates-image/cs50-certificate.jpg"
-import A11yCertificate from "../../../public/certificates-image/a11y-certificate.jpg"
+import FigmaCertificate from "../../../public/certificates-image/figma-certificate.jpg"
 import IntroductionProgrammingCertificate from "../../../public/certificates-image/introduction-programming-certificate.jpg"
-import DataAnalytics from "../../../public/certificates-image/data-analytics-certificate.jpg"
+import ReactCertificate from "../../../public/certificates-image/react-certificate.jpg"
+import { ButtonTrigger } from "./button-trigger"
+import { Content } from "./content"
 
 export function CertificatesContent() {
 	return (
