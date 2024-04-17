@@ -1,4 +1,4 @@
-import "../styles/globals.css"
+import "../styles/global.css"
 
 import type { Metadata } from "next"
 import { Prompt } from "next/font/google"
