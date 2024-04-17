@@ -1,5 +1,6 @@
-import Link from "next/link"
+
 import { Compiler } from "@/components/compiler"
+import { LinkUi } from "@/components/ui/link-ui"
 
 export const metadata = {
 	title: "Git hub",
@@ -27,13 +28,12 @@ export default async function Github() {
 				<div className="p-1">
 					<span className="text-xl">
               To access my git hub use this link:
-						<Link
-							className="font-semibold ml-2 rounded border-2 border-transparent focus-visible:border-zinc-500 hover:text-zinc-600 transition-all duration-500"
-							href="https://github.com/diaspd"
+						<LinkUi
+							url="https://github.com/diaspd"
 							target="blank"
 						>
-                GitHub
-						</Link>
+							<span>GitHub</span> 
+						</LinkUi>
 					</span>
 				</div>
 			</main>

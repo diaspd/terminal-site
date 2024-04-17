@@ -32,7 +32,6 @@ export function HeaderButtons() {
 			/>
 
 			<button
-				aria-label="Size changes"
 				className="rounded-full
        bg-yellow-400 h-5 w-5 
        hover:bg-yellow-600  

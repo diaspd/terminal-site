@@ -1,7 +1,7 @@
+import { LinkUi } from "@/components/ui/link-ui"
 import * as Dialog from "@radix-ui/react-dialog"
 import Image, { StaticImageData } from "next/image"
 
-import Link from "next/link"
 import { X }from "phosphor-react"
 
 interface ContentProps{
@@ -42,9 +42,13 @@ export function Content({title, description, url, photoUrl}: ContentProps) {
 								Link to Certificate:
 							</p>
 
-							<Link className="whitespace-nowrap text-xl rounded border-2 border-zinc-800 focus:border-zinc-500 hover:text-zinc-500 transition-all duration-500" target="_blank" href={url}>
+							<LinkUi 
+								target="_blank" 
+								className="whitespace-nowrap ml-0"
+								url={url}
+							>
 								{title}
-							</Link>
+							</LinkUi>
 						</>
 					): (
 						<p className="select-none whitespace-nowrap text-xl rounded border-2 border-zinc-800 focus:border-zinc-500">

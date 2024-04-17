@@ -1,6 +1,5 @@
-import Link from "next/link"
-
 import { Compiler } from "@/components/compiler"
+import { LinkUi } from "@/components/ui/link-ui"
 
 export const metadata = {
 	title: "Projects",
@@ -11,118 +10,93 @@ export default function Projects() {
 		<>
 			<Compiler />
 
-			<main className="flex flex-1 items-center justify-start max-w-fit lg:max-w-7xl p-4 ">
-				<div className="bg-zinc-800 rounded-md ml-11 px-12 lg:px-4 py-4 space-y-4">
-					<span className="text-xl font-semibold">Projects online:</span>
-					<div className="group">
-						<Link 
-							target="_blank" 
-							href="https://book-wise-delta.vercel.app/" 
-							className="text-xl text-zinc-200 hover:text-zinc-600 rounded border-2 border-zinc-800 focus-visible:border-zinc-500">
-                  Book Wise
-						</Link>
-					</div>
+			<div className="bg-zinc-800 rounded-md md:ml-14 px-12 lg:px-4 py-4 space-y-4 w-fit m-5">
+				<span className="text-xl font-semibold">Projects online:</span>
+			
+				<LinkUi 
+					target="_blank" 
+					url="https://book-wise-delta.vercel.app/" 
+					className="block"
+				> Book Wise
+				</LinkUi>
+			
+				<LinkUi 
+					target="_blank" 
+					url="https://ignite-call-diaspd.vercel.app/" 
+					className="block"
+				> Ignite Call
+				</LinkUi>
 					
-					<div className="group">
-						<Link 
-							target="_blank" 
-							href="https://ignite-call-diaspd.vercel.app/" 
-							className="text-xl text-zinc-200 hover:text-zinc-600 rounded border-2 border-zinc-800 focus-visible:border-zinc-500">
-                  Ignite Call
-						</Link>
-					</div>
-
-					<div className="group">
-						<Link 
-							target="_blank" 
-							href="https://untitled-ui-rouge.vercel.app/" 
-							className="text-xl text-zinc-200 hover:text-zinc-600 rounded border-2 border-zinc-800 focus-visible:border-zinc-500">
-                  Untitled UI
-						</Link>
-					</div>
+				<LinkUi 
+					target="_blank" 
+					url="https://untitled-ui-rouge.vercel.app/" 
+					className="block"
+				> Untitled UI
+				</LinkUi>
 				
-					<div className="group">
-						<Link 
-							target="_blank" 
-							href="https://ignite-shop-pearl-three.vercel.app/" 
-							className="text-xl text-zinc-200 hover:text-zinc-600 rounded border-2 border-zinc-800 focus-visible:border-zinc-500">
-                  Ignite Shop
-						</Link>
-					</div>
+				<LinkUi 
+					target="_blank" 
+					url="https://ignite-shop-pearl-three.vercel.app/" 
+					className="block"
+				> Ignite Shop
+				</LinkUi>
 
-					<div className="group">
-						<Link 
-							target="_blank" 
-							href="https://ignite-timer-five-chi.vercel.app/" 
-							className="text-xl text-zinc-200 hover:text-zinc-600 rounded border-2 border-zinc-800 focus-visible:border-zinc-500">
-                  Ignite Timer
-						</Link>
-					</div>
+				<LinkUi 
+					target="_blank" 
+					url="https://ignite-timer-five-chi.vercel.app/" 
+					className="block"
+				> Ignite Timer
+				</LinkUi>
 
-					<div className="group">
-						<Link 
-							target="_blank" 
-							href="https://github-blog-e7ik2ctob-diaspd.vercel.app/" 
-							className="text-xl text-zinc-200 hover:text-zinc-600 rounded border-2 border-zinc-800 focus-visible:border-zinc-500">
-                  Github Blog
-						</Link>
-					</div>
+				<LinkUi 
+					target="_blank" 
+					url="https://github-blog-e7ik2ctob-diaspd.vercel.app/" 
+					className="block"
+				> Github Blog
+				</LinkUi>
 
-					<div className="group">
-						<Link 
-							target="_blank" 
-							href="https://coffee-delivery-wheat-nu.vercel.app/" 
-							className="text-xl text-zinc-200 hover:text-zinc-600 rounded border-2 border-zinc-800 focus-visible:border-zinc-500">
-                  Coffee Delivery
-						</Link>
-					</div>
+				<LinkUi 
+					target="_blank" 
+					url="https://coffee-delivery-wheat-nu.vercel.app/" 
+					className="block"
+				> Coffee Delivery
+				</LinkUi>
 
-					<div className="group">
-						<Link 
-							target="_blank" 
-							href="https://to-do-tan-eight.vercel.app/" 
-							className="text-xl text-zinc-200 hover:text-zinc-600 rounded border-2 border-zinc-800 focus-visible:border-zinc-500">
-                  To do
-						</Link>
-					</div>
+				<LinkUi 
+					target="_blank" 
+					url="https://to-do-tan-eight.vercel.app/" 
+					className="block"
+				> To do
+				</LinkUi>
 
-					<div className="group">
-						<Link 
-							target="_blank" 
-							href="https://letmeask-88cb8.web.app/" 
-							className="text-xl text-zinc-200 hover:text-zinc-600 rounded border-2 border-zinc-800 focus-visible:border-zinc-500">
-                  Let Me Ask
-						</Link>
-					</div>
+				<LinkUi 
+					target="_blank" 
+					url="https://letmeask-88cb8.web.app/" 
+					className="block"
+				> Let Me Ask
+				</LinkUi>
+						
+				<LinkUi 
+					target="_blank" 
+					url="https://moveit-h9tlq1493-diaspd.vercel.app/" 
+					className="block"
+				> Move It
+				</LinkUi>
 
-					<div className="group">
-						<Link 
-							target="_blank" 
-							href="https://moveit-h9tlq1493-diaspd.vercel.app/" 
-							className="text-xl text-zinc-200 hover:text-zinc-600 rounded border-2 border-zinc-800 focus-visible:border-zinc-500">
-              Move It
-						</Link>
-					</div>
+				<LinkUi 
+					target="_blank" 
+					url="https://diaspd.github.io/design-system-ignite" 
+					className="block"
+				> Design System
+				</LinkUi>
 
-					<div className="group">
-						<Link 
-							target="_blank" 
-							href="https://diaspd.github.io/design-system-ignite" 
-							className="text-xl text-zinc-200 hover:text-zinc-600 rounded border-2 border-zinc-800 focus-visible:border-zinc-500">
-                  Design System
-						</Link>
-					</div>
-
-					<div className="group">
-						<Link 
-							target="_blank" 
-							href="https://diaspd.github.io/gesture-controller/template" 
-							className="text-xl text-zinc-200 hover:text-zinc-600 rounded border-2 border-zinc-800 focus-visible:border-zinc-500">
-                  Gesture Controller
-						</Link>
-					</div>
-				</div>
-			</main>
+				<LinkUi 
+					target="blank" 
+					url="https://diaspd.github.io/gesture-controller/template" 
+					className="block"
+				> Gesture Controller
+				</LinkUi>
+			</div>
 		</>
 	)
 }
