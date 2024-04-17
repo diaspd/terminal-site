@@ -3,7 +3,7 @@ import "../styles/globals.css"
 import type { Metadata } from "next"
 import { Prompt } from "next/font/google"
 
-import { ThemeProvider } from "./theme-provider"
+import { ThemeProvider } from "../components/theme-provider"
 
 import { Header } from "@/components/header"
 
@@ -26,6 +26,7 @@ export default function RootLayout({children}: { children: React.ReactNode}) {
 	return (
 		<html lang="en" className={prompt.variable}>
 			<head />
+			
 			<body className="antialiased">
 				<ThemeProvider>
 					<div

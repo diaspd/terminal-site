@@ -1,6 +1,5 @@
-import Link from "next/link"
-
 import { Compiler } from "@/components/compiler"
+import { LinkUi } from "@/components/ui/link-ui"
 
 export const metadata = {
 	title: "Twitter",
@@ -16,13 +15,9 @@ export default function Twitter() {
 				<div className="p-1">
 					<span className="text-xl">
               To access my Twitter use this link: {" "}
-						<Link
-							className="font-semibold inline-block hover:translate-y-2 hover:text-zinc-600 transition-all rounded duration-500 border-2 border-transparent focus-visible:border-zinc-500"
-							href="https://twitter.com/diaspdr_1"
-							target="blank"
-						>
-                Twitter
-						</Link>
+						<LinkUi url="https://twitter.com/diaspdr_1" variant="move" target="blank">
+              Twitter
+						</LinkUi>
 					</span>
 				</div>
 			</main>

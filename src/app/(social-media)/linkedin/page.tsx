@@ -1,5 +1,5 @@
-import Link from "next/link"
 import { Compiler } from "@/components/compiler"
+import { LinkUi } from "@/components/ui/link-ui"
 
 export const metadata = {
 	title: "Linked In",
@@ -15,13 +15,9 @@ export default function LinkedIn() {
 				<div className="p-1">
 					<span className="text-xl">
               To access my LinkedIn use this link: {" "}
-						<Link
-							className="font-semibold inline-block hover:translate-y-2 hover:text-zinc-600 transition-all rounded duration-500 border-2 border-transparent focus-visible:border-zinc-500"
-							href="https://www.linkedin.com/in/pedro-diasr/"
-							target="blank"
-						>
+						<LinkUi url="https://www.linkedin.com/in/pedro-diasr/" variant="move" target="blank">
                 LinkedIn
-						</Link>
+						</LinkUi>
 					</span>
 				</div>
 			</main>
