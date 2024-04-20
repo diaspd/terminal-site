@@ -11,7 +11,7 @@ const inputFormSchema = z.object({
 
 type FormInput = z.infer<typeof inputFormSchema>
 
-export function InputComponent() {
+export function Input() {
 	const router = useRouter()
 
 	const { register, handleSubmit } = useForm<FormInput>({
@@ -91,7 +91,7 @@ export function InputComponent() {
 				{...register("input")}
 				type="text"
 				required
-				className="bg-transparent dark:invisible animate-pulse valid:animate-none valid:border-0 focus-within:border-0 h-8 border-zinc-200 border-l-4 text-2xl font-regular w-5/6 text-white"
+				className="bg-transparent dark:invisible animate-pulse valid:animate-none valid:border-0 focus-within:border-0 h-8 border-zinc-200 border-l-4 text-2xl font-regular w-5/6 text-white outline-none"
 			/>
 
 			<datalist id="search-suggestions">

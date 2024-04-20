@@ -1,4 +1,4 @@
-import { InputComponent } from "@/components/input-component"
+import { Input } from "@/components/input"
 
 export const metadata = {
 	title: "Home",
@@ -16,7 +16,7 @@ export default function Home() {
 					~\
 				</p>
 
-				<InputComponent />
+				<Input />
 			</div>
 		</>
 	)
