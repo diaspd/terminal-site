@@ -1,8 +1,8 @@
 "use client"
 
+import { ArrowLeft, TerminalSquare } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { ArrowLeft, TerminalWindow } from "phosphor-react"
 
 import { HeaderButtons } from "../header-buttons"
 
@@ -26,7 +26,7 @@ export function Header() {
 						aria-label="go back"
 						className="text-zinc-100 rounded border-2 border-zinc-900 focus-visible:border-zinc-500 hover:text-zinc-500 transition-all duration-200"
 					>
-						<ArrowLeft weight="bold" className="h-6 w-6"/>
+						<ArrowLeft fill="bold" className="size-7"/>
 					</Link>
 
 					<span className="hidden lg:flex text-2xl">
@@ -34,7 +34,7 @@ export function Header() {
 					</span>
 
 					<span className="lg:hidden ml-auto">
-						<TerminalWindow width={24} height={24}/>
+						<TerminalSquare width={24} height={24}/>
 					</span>
 				</>
 			)}

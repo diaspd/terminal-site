@@ -1,6 +1,6 @@
 import * as Dialog from "@radix-ui/react-dialog"
+import { X }from "lucide-react"
 import Image, { StaticImageData } from "next/image"
-import { X }from "phosphor-react"
 
 import { LinkUi } from "@/components/ui/link-ui"
 

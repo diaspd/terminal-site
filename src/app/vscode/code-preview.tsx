@@ -1,6 +1,6 @@
 "use client"
 
-import { Check, Copy } from "phosphor-react"
+import { Check, Copy } from "lucide-react"
 import { useState } from "react"
 
 import { Compiler } from "@/components/compiler"
@@ -32,7 +32,7 @@ export function CodePreview({ code, raw }: CodePreviewProps) {
 				>
 					{!hasCopiedToClipboard ? 
 						(<Copy className="hover:text-zinc-500 text-zinc-100" size={26} />) : 
-						(<Check className="text-emerald-400 border-2 border-emerald-500 rounded" size={26} weight="bold" alt="copied" />)
+						(<Check className="text-emerald-400 border-2 border-emerald-500 rounded" size={26} />)
 					}      
 				</button>
 				
