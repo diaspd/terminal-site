@@ -1,16 +1,16 @@
 "use client"
 
-import * as Accordion from "@radix-ui/react-accordion"
+import { Accordion } from "@/components/ui/accordion"
 
 import { KnowledgeItem } from "./knowledge-item"
 
 export function KnowledgeContent() {
 	return (
-		<Accordion.Root
+		<Accordion
 			type="single"
 			defaultValue="item-1"	
 			collapsible
-			className="bg-zinc-800 grid rounded-md md:ml-14 p-4 lg:w-1/2 m-5 gap-4"
+			className="md:ml-11 p-4 max-w-4xl m-5 gap-4"
 		>
 			<KnowledgeItem 
 				title="Front-end"
@@ -46,6 +46,6 @@ export function KnowledgeContent() {
 				description="DDD"
 				value="item-5"
 			/>
-		</Accordion.Root>
+		</Accordion>
 	)
 }
