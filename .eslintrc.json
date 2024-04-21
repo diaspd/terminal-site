@@ -25,6 +25,9 @@
   "rules": {
     "@typescript-eslint/no-non-null-assertion": "off",
     "simple-import-sort/imports": "error",
+    "react/prop-types": [2, {
+      "ignore": ["className"]
+    }],
     
     "indent": [
         "error",
