@@ -30,7 +30,7 @@ export function Content({title, description, url, photoUrl}: ContentProps) {
 						className="w-11/12 h-96 hidden lg:flex select-none" 
 					/>
 					
-					<Dialog.Close className="absolute top-5 right-5 inline-flex h-6 w-6 appearance-none items-center justify-center rounded-lg focus:shadow-[0_0_0_2px] hover:text-zinc-500 transition-all duration-300" aria-label="Close">
+					<Dialog.Close className="absolute top-5 right-5 inline-flex h-6 w-6 appearance-none items-center justify-center rounded-lg focus:shadow-[0_0_0_2px] hover:text-zinc-500 transition-all duration-200" aria-label="Close">
 						<X size={24}/>
 					</Dialog.Close>
 				</header>
