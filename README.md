@@ -21,7 +21,9 @@
 This project was developed with the following technologies:
 <b>
 - Nextjs
+- TypeScript
 - TailwindCss
+- Shadcn/ui
 </b>
 
 </br>
