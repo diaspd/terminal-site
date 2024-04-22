@@ -2,6 +2,7 @@
 
 import { Check, Copy } from "lucide-react"
 import { useState } from "react"
+import { toast } from "sonner"
 
 import { Compiler } from "@/components/compiler"
 
@@ -18,6 +19,7 @@ export function CodePreview({ code, raw }: CodePreviewProps) {
 		navigator.clipboard.writeText(raw)
 		setCopiedToClipboard(true)
 		setTimeout(() => setCopiedToClipboard(false), 2200)
+		toast.success("Copied!")
 	}
 
 	return (

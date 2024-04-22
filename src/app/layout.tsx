@@ -2,6 +2,7 @@ import "../styles/global.css"
 
 import type { Metadata } from "next"
 import { Prompt } from "next/font/google"
+import { Toaster } from "sonner"
 
 import { Header } from "@/components/header"
 
@@ -28,6 +29,8 @@ export default function RootLayout({children}: { children: React.ReactNode}) {
 			<head />
 			
 			<body className="antialiased">
+				<Toaster invert position="top-right"/>
+				
 				<ThemeProvider>
 					<div
 						className="flex dark:from-black dark:to-black text-zinc-100 items-center justify-center h-screen w-screen bg-gradient-to-r from-black via-zinc-800 to-[#035E7B]"

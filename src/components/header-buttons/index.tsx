@@ -23,7 +23,7 @@ export function HeaderButtons() {
 				onClick={handleClose}
 				aria-label="Close"
 				className="rounded-full
-       bg-red-500 size-6
+       bg-red-500 size-5
        hover:bg-red-700
        transition-all
        duration-200
@@ -33,7 +33,7 @@ export function HeaderButtons() {
 
 			<button
 				className="rounded-full
-       bg-yellow-400 size-6 
+       bg-yellow-400 size-5
        hover:bg-yellow-600  
        transition-all
        duration-200
@@ -45,7 +45,7 @@ export function HeaderButtons() {
 				onClick={handleMaximize}
 				aria-label="Open terminal"
 				className="rounded-full
-       bg-lime-400 size-6 
+       bg-lime-400 size-5
        hover:bg-lime-600  
        transition-all
        duration-200

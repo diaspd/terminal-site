@@ -28,6 +28,7 @@
     "react-dom": "18.2.0",
     "react-hook-form": "^7.43.9",
     "shiki": "^0.14.2",
+    "sonner": "^1.4.41",
     "tailwind-merge": "^2.3.0",
     "tailwind-scrollbar": "^3.0.5",
     "tailwind-variants": "^0.2.1",
