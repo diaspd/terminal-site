@@ -4,7 +4,8 @@ import { tv, VariantProps } from "tailwind-variants"
 
 const link = tv({
 	base: [
-		"font-semibold ml-2 rounded border-2 border-transparent focus-visible:border-zinc-500 hover:text-zinc-600", 
+		"font-medium rounded border-2 border-transparent focus-visible:muted-foreground", 
+		"text-foreground hover:text-muted-foreground",
 		"transition-all duration-200",
 		"active:opacity-80",
 	],

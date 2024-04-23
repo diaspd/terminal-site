@@ -5,6 +5,8 @@ import { useRouter } from "next/navigation"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
 
+import { useTheme } from "../theme/theme-provider"
+
 const inputFormSchema = z.object({
 	input: z.string(),
 })
@@ -12,6 +14,7 @@ const inputFormSchema = z.object({
 type FormInput = z.infer<typeof inputFormSchema>
 
 export function Input() {
+	const { theme } = useTheme()
 	const router = useRouter()
 
 	const { register, handleSubmit } = useForm<FormInput>({
@@ -79,6 +82,10 @@ export function Input() {
 		}
 	}
 
+	if (theme === "black") {
+		return
+	}
+
 	return (
 		<form onSubmit={handleSubmit(handleSubmitInput)}>
 			<label htmlFor="input" className="sr-only">
@@ -91,7 +98,7 @@ export function Input() {
 				{...register("input")}
 				type="text"
 				required
-				className="bg-transparent dark:invisible animate-pulse valid:animate-none valid:border-0 focus-within:border-0 h-8 border-zinc-200 border-l-4 text-2xl font-regular w-5/6 text-white outline-none"
+				className="bg-transparent black:invisible animate-pulse valid:animate-none valid:border-0 focus-within:border-0 h-7 border-foreground border-l-4 text-2xl font-regular w-5/6 text-foreground outline-none"
 			/>
 
 			<datalist id="search-suggestions">

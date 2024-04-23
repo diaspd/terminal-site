@@ -32,7 +32,7 @@ export default async function Github() {
 							url="https://github.com/diaspd"
 							target="blank"
 						>
-							<span>GitHub</span> 
+							<span>{" "}GitHub</span> 
 						</LinkUi>
 					</span>
 				</div>
@@ -41,10 +41,10 @@ export default async function Github() {
 			<footer className="ml-12 grid items-center justify-start mt-4 gap-2 p-4">
 				<p className="text-xl">Here&apos;s some of my repositories:</p>
 
-				<div role="document" tabIndex={0} className="overflow-y-scroll scrollbar-thin scrollbar-track-transparent scrollbar-thumb-white h-44 focus-visible:ring-2 focus-visible:ring-zinc-200 focus-visible:ring-offset-0 rounded-md">
+				<div role="document" tabIndex={0} className="overflow-y-scroll scrollbar-thin scrollbar-track-transparent scrollbar-thumb-foreground h-44 focus-visible:ring-2 focus-visible:ring-zinc-200 focus-visible:ring-offset-0 rounded-md">
 					{repositories.map((repos: PostGithubProps) => (
 						<p
-							className="bg-zinc-800 rounded-md p-2 mt-2 mr-4"
+							className="bg-primary/10 rounded-md p-2 mt-2 mr-4"
 							key={repos.name}
 						>
                 🔘 {repos.name}

@@ -16,9 +16,9 @@ export function Content({title, description, url, photoUrl}: ContentProps) {
 		<Dialog.Portal>
 			<Dialog.Overlay className="data-[state=open]:animate-overlayShow fixed inset-0 backdrop-blur-md" />
 			
-			<Dialog.Content className="data-[state=open]:animate-contentShow fixed top-[50%] text-white left-[50%] max-h-[50vh] w-11/12 lg:max-w-3xl translate-x-[-50%] translate-y-[-50%] rounded bg-zinc-800 p-6 divide-y-2 overflow-auto md:max-h-[60vh] scrollbar-thin scrollbar-track-transparent scrollbar-thumb-zinc-100">
+			<Dialog.Content className="data-[state=open]:animate-contentShow fixed top-[50%] left-[50%] max-h-[50vh] w-11/12 lg:max-w-3xl translate-x-[-50%] translate-y-[-50%] rounded bg-background p-6 divide-y-2 overflow-auto md:max-h-[60vh] scrollbar-thin scrollbar-track-transparent scrollbar-thumb-foreground">
 
-				<header className="bg-clip-border divide-zinc-100 border-zinc-50 pb-5 h-full">
+				<header className="bg-clip-border divide-muted-foreground border-muted-foreground pb-5 h-full">
 					<Image 
 						src={photoUrl} 
 						width={600} 
@@ -30,7 +30,7 @@ export function Content({title, description, url, photoUrl}: ContentProps) {
 						className="w-11/12 h-96 hidden lg:flex select-none" 
 					/>
 					
-					<Dialog.Close className="absolute top-5 right-5 inline-flex h-6 w-6 appearance-none items-center justify-center rounded-lg focus:shadow-[0_0_0_2px] hover:text-zinc-500 transition-all duration-200" aria-label="Close">
+					<Dialog.Close className="absolute top-5 right-5 inline-flex h-6 w-6 appearance-none items-center justify-center rounded-lg focus:shadow-[0_0_0_2px] hover:text-muted-foreground transition-all duration-200" aria-label="Close">
 						<X size={24}/>
 					</Dialog.Close>
 				</header>
@@ -61,7 +61,7 @@ export function Content({title, description, url, photoUrl}: ContentProps) {
 					<p className="w-full text-left text-xl select-none">
         Learned:
 					</p>
-					<span className="text-white mt-1">
+					<span className="text-foreground mt-1">
 						{description}
 					</span>
 				</section>

@@ -1,26 +1,14 @@
 "use client"
 
-import { useTheme } from "next-themes"
+import { useTheme } from "../theme/theme-provider"
 
 export function HeaderButtons() {
-	const { theme, setTheme } = useTheme()
-
-	function handleClose() {
-		if (theme === "light") {
-			setTheme("dark")
-		}
-	}
-  
-	function handleMaximize() {
-		if (theme === "dark") {
-			setTheme("light")
-		}
-	}
+	const { setTheme } = useTheme()
 
 	return (
 		<div className="flex gap-3">
 			<button
-				onClick={handleClose}
+				onClick={() => setTheme("black")}
 				aria-label="Close"
 				className="rounded-full
        bg-red-500 size-5
@@ -42,7 +30,7 @@ export function HeaderButtons() {
 			/>
 
 			<button
-				onClick={handleMaximize}
+				onClick={() => setTheme("dark")}
 				aria-label="Open terminal"
 				className="rounded-full
        bg-lime-400 size-5

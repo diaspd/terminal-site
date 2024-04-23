@@ -40,7 +40,7 @@ input::-webkit-calendar-picker-indicator {
   }
 
   .dark {
-    --background: 240 10% 3.9%;
+    --background: 240 5.9% 10%;
     --foreground: 0 0% 98%;
 
     --card: 240 10% 3.9%;
@@ -67,6 +67,37 @@ input::-webkit-calendar-picker-indicator {
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
+  }
+
+  .black {
+    --background: 240 00% 0%;
+
+    --foreground: 0 0% 0%;
+
+    --card: #000;
+    --card-foreground: #000;
+
+    --popover: #000;
+    --popover-foreground: #000;
+
+    --primary: #000;
+    --primary-foreground: #000;
+
+    --secondary: #000;
+    --secondary-foreground: #000;
+
+    --muted: #000;
+    --muted-foreground: #000;
+
+    --accent: #000;
+    --accent-foreground: #000;
+
+    --destructive: #000;
+    --destructive-foreground: #000;
+
+    --border: #000;
+    --input: #000;
+    --ring: #000;
   }
 }
 
