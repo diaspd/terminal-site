@@ -5,9 +5,8 @@ import { Prompt } from "next/font/google"
 import { Toaster } from "sonner"
 
 import { Header } from "@/components/header"
+import { ThemeProvider } from "@/components/theme/theme-provider"
 import { ThemeToggle } from "@/components/theme/theme-toggle"
-
-import { ThemeProvider } from "../components/theme/theme-provider"
 
 const prompt = Prompt({ subsets: ["latin"], weight: ["100", "200", "400", "500", "600", "700", "800", "900"], variable: "--font-prompt" })
 
@@ -29,9 +28,9 @@ export default function RootLayout({children}: { children: React.ReactNode}) {
 		<html lang="en" className={prompt.variable}>
 			<head />
 			<body className="antialiased">
-				<ThemeProvider 
+				<ThemeProvider
 					attribute="class"
-					defaultTheme="dark"
+					defaultTheme="system"
 					enableSystem
 					disableTransitionOnChange
 				>
@@ -42,7 +41,7 @@ export default function RootLayout({children}: { children: React.ReactNode}) {
 					</div>
 
 					<div
-						className="flex text-foreground items-center justify-center h-screen w-screen bg-muted dark:bg-gradient-to-r bg-gradient-to-l from-gray-200 via-gray-400 to-gray-600 dark:from-black dark:via-zinc-800 dark:to-[#035E7B]"
+						className="flex text-foreground items-center justify-center h-screen w-screen bg-muted dark:bg-gradient-to-r bg-gradient-to-l from-gray-200 via-gray-400 to-gray-600 dark:from-black dark:via-zinc-800 dark:to-zinc-600"
 					>
 						<main
 							className="pb-2 black:select-none bg-background rounded-md h-1/2 lg:max-h-4/6 m-8 lg:h-4/6 md:w-3/6 overflow-y-auto overflow-x-hidden scrollbar-thin scrollbar-track-transparent scrollbar-thumb-foreground shadow-lg"
