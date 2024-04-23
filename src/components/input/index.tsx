@@ -5,8 +5,6 @@ import { useRouter } from "next/navigation"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
 
-import { useTheme } from "../theme/theme-provider"
-
 const inputFormSchema = z.object({
 	input: z.string(),
 })
@@ -14,7 +12,6 @@ const inputFormSchema = z.object({
 type FormInput = z.infer<typeof inputFormSchema>
 
 export function Input() {
-	const { theme } = useTheme()
 	const router = useRouter()
 
 	const { register, handleSubmit } = useForm<FormInput>({
@@ -80,10 +77,6 @@ export function Input() {
 		default:
 			router.push("/")
 		}
-	}
-
-	if (theme === "black") {
-		return
 	}
 
 	return (

@@ -26,11 +26,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: { children: React.ReactNode}) {
 	return (
-		<ThemeProvider storageKey="terminal-theme" defaultTheme="dark">
-			<html lang="en" className={prompt.variable}>
-				<head />
-			
-				<body className="antialiased">
+		<html lang="en" className={prompt.variable}>
+			<head />
+			<body className="antialiased">
+				<ThemeProvider 
+					attribute="class"
+					defaultTheme="dark"
+					enableSystem
+					disableTransitionOnChange
+				>
 					<Toaster invert position="bottom-right" />
 
 					<div className="fixed right-5 top-5">
@@ -38,7 +42,7 @@ export default function RootLayout({children}: { children: React.ReactNode}) {
 					</div>
 
 					<div
-						className="flex text-foreground items-center justify-center h-screen w-screen bg-muted dark:bg-gradient-to-r dark:from-black dark:via-zinc-800 dark:to-[#035E7B]"
+						className="flex text-foreground items-center justify-center h-screen w-screen bg-muted dark:bg-gradient-to-r bg-gradient-to-l from-gray-200 via-gray-400 to-gray-600 dark:from-black dark:via-zinc-800 dark:to-[#035E7B]"
 					>
 						<main
 							className="pb-2 black:select-none bg-background rounded-md h-1/2 lg:max-h-4/6 m-8 lg:h-4/6 md:w-3/6 overflow-y-auto overflow-x-hidden scrollbar-thin scrollbar-track-transparent scrollbar-thumb-foreground shadow-lg"
@@ -48,8 +52,9 @@ export default function RootLayout({children}: { children: React.ReactNode}) {
 							{children}
 						</main>
 					</div>
-				</body>
-			</html>
-		</ThemeProvider>
+					
+				</ThemeProvider>
+			</body>
+		</html>
 	)
 }

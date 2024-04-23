@@ -1,14 +1,8 @@
-"use client"
-
-import { useTheme } from "../theme/theme-provider"
-
 export function HeaderButtons() {
-	const { setTheme } = useTheme()
 
 	return (
 		<div className="flex gap-3">
 			<button
-				onClick={() => setTheme("black")}
 				aria-label="Close"
 				className="rounded-full
        bg-red-500 size-5
@@ -30,7 +24,6 @@ export function HeaderButtons() {
 			/>
 
 			<button
-				onClick={() => setTheme("dark")}
 				aria-label="Open terminal"
 				className="rounded-full
        bg-lime-400 size-5
