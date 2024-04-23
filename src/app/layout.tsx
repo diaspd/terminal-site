@@ -27,12 +27,13 @@ export default function RootLayout({children}: { children: React.ReactNode}) {
 	return (
 		<html lang="en" className={prompt.variable}>
 			<head />
-			<body className="antialiased">
+			<body className="antialiased group">
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"
 					enableSystem
 					disableTransitionOnChange
+					themes={["dark", "light", "black"]}
 				>
 					<Toaster invert position="bottom-right" />
 
@@ -41,7 +42,7 @@ export default function RootLayout({children}: { children: React.ReactNode}) {
 					</div>
 
 					<div
-						className="flex text-foreground items-center justify-center h-screen w-screen bg-muted dark:bg-gradient-to-r bg-gradient-to-l from-gray-200 via-gray-400 to-gray-600 dark:from-black dark:via-zinc-800 dark:to-zinc-600"
+						className="flex text-foreground items-center bg-muted-foreground justify-center h-screen w-screen dark:bg-gradient-to-r dark:from-black dark:via-zinc-800 dark:to-zinc-600"
 					>
 						<main
 							className="pb-2 black:select-none bg-background rounded-md h-1/2 lg:max-h-4/6 m-8 lg:h-4/6 md:w-3/6 overflow-y-auto overflow-x-hidden scrollbar-thin scrollbar-track-transparent scrollbar-thumb-foreground shadow-lg"

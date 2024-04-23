@@ -68,6 +68,36 @@ input::-webkit-calendar-picker-indicator {
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
   }
+
+  .black {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 0%;
+
+    --card: 0 0 0%;
+    --card-foreground: 0 0% 0%;
+
+    --popover: 0 0 0%;
+    --popover-foreground: 0 0% 0%;
+
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 0 0% 0%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 0%;
+    --muted-foreground: 0 0% 00%;
+
+    --accent: 0 0% 0%;
+    --accent-foreground: 0 0% 0;
+
+    --destructive: 0 0 0%;
+    --destructive-foreground: 0 0% 0%;
+
+    --border: 0 0% 0%;
+    --input: 0 0% 0%;
+    --ring: 0 0% 0%;
+  }
 }
 
 @layer base {
