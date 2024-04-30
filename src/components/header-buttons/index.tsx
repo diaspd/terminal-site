@@ -1,43 +1,32 @@
 "use client"
+
 import { useTheme } from "next-themes"
+
+import { Button } from "../ui/button"
 
 export function HeaderButtons() {
 	const { setTheme } = useTheme()
   
 	return (
 		<div className="flex gap-3">
-			<button
+			<Button
 				onClick={() => {setTheme("black")}}
-				aria-label="Close"
-				className="rounded-full
-       bg-red-500 size-5
-       hover:bg-red-700
-       transition-all
-       duration-200
-       focus-within:border-zinc-300 focus-within:ring-2 focus-within:ring-zinc-200 
-       "
+				variant="actions"
+				size="xm"
+				className="bg-red-500 hover:bg-red-700"
 			/>
 
-			<button
-				className="rounded-full
-       bg-yellow-400 size-5
-       hover:bg-yellow-600  
-       transition-all
-       duration-200
-       focus-within:border-zinc-300 focus-within:ring-2 focus-within:ring-zinc-200 
-       "
+			<Button
+				variant="actions"
+				size="xm"
+				className="bg-yellow-400 hover:bg-yellow-600"
 			/>
 
-			<button
+			<Button
 				onClick={() => {setTheme("dark")}}
-				aria-label="Open terminal"
-				className="rounded-full
-       bg-lime-400 size-5
-       hover:bg-lime-600  
-       transition-all
-       duration-200
-       focus-within:border-zinc-300 focus-within:ring-2 focus-within:ring-zinc-200 
-       "
+				variant="actions"
+				size="xm"
+				className="bg-lime-400 hover:bg-lime-600"
 			/>
 		</div>
 	)

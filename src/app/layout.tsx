@@ -30,7 +30,7 @@ export default function RootLayout({children}: { children: React.ReactNode}) {
 			<body className="antialiased group">
 				<ThemeProvider
 					attribute="class"
-					defaultTheme="system"
+					defaultTheme="dark"
 					enableSystem
 					disableTransitionOnChange
 					themes={["dark", "light", "black"]}
