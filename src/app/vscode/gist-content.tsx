@@ -11,7 +11,7 @@ export async function GistContent({ gistUrl }: GistProps) {
 	const settings = await settingsResponse.text()
 
 	const highlighter = await shiki.getHighlighter({
-		theme: "dracula",
+		theme: "min-dark",
 	})
 
 	const code = highlighter.codeToHtml(settings, { lang: "json" })

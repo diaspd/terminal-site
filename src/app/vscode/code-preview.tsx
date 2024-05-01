@@ -26,7 +26,7 @@ export function CodePreview({ code, raw }: CodePreviewProps) {
 		<>
 			<Compiler />
 
-			<div className="p-5 m-5 bg-[#282A36] ml-14 mt-5 w-10/12 mb-10 h-fit rounded-md relative">
+			<div className="p-5 m-5 bg-[#1f1f1f] ml-14 mt-5 w-10/12 mb-10 h-fit rounded-md relative">
 				<button
 					title="copy"
 					className="mb-4 cursor-pointer w-fit bg-zinc-800 absolute right-10 flex gap-2 border-2 rounded focus-visible:border-zinc-100 border-zinc-800"
@@ -40,7 +40,7 @@ export function CodePreview({ code, raw }: CodePreviewProps) {
 				
 				<div
 					id="shiki-code"
-					className="leading-relaxed w-full h-80 rounded-sm bg-[#282A36] font-medium overflow-scroll md:overflow-x-hidden focus-within:border-zinc-300 focus-within:ring-2 focus-within:ring-zinc-100 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-zinc-100"
+					className="leading-relaxed w-full h-80 rounded-sm bg-inherit font-medium overflow-scroll md:overflow-x-hidden focus-within:border-zinc-300 focus-within:ring-2 focus-within:ring-zinc-100 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-muted-foreground px-5"
 					dangerouslySetInnerHTML={{ __html: code }}
 				/>
 			</div>
