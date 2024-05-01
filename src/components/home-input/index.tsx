@@ -5,13 +5,15 @@ import { useRouter } from "next/navigation"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
 
+import { Input } from "../ui/input"
+
 const inputFormSchema = z.object({
 	input: z.string(),
 })
 
 type FormInput = z.infer<typeof inputFormSchema>
 
-export function Input() {
+export function HomeInput() {
 	const router = useRouter()
 
 	const { register, handleSubmit } = useForm<FormInput>({
@@ -85,13 +87,12 @@ export function Input() {
 				Ex: github
 			</label>
 
-			<input
+			<Input
 				list="search-suggestions"
-				id="input"
 				{...register("input")}
 				type="text"
 				required
-				className="bg-transparent black:invisible animate-pulse valid:animate-none valid:border-0 focus-within:border-0 h-7 border-foreground border-l-4 text-2xl font-regular w-5/6 text-foreground outline-none"
+				className="black:invisible border-0 rounded-none focus-visible:rounded-md animate-pulse valid:animate-none valid:border-0 focus-within:border-0 border-foreground border-l-4 text-2xl text-foreground"
 			/>
 
 			<datalist id="search-suggestions">

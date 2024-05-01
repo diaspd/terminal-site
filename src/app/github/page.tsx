@@ -43,12 +43,13 @@ export default async function Github() {
 
 				<div role="document" tabIndex={0} className="overflow-y-scroll scrollbar-thin scrollbar-track-transparent scrollbar-thumb-foreground h-44 focus-visible:ring-2 focus-visible:ring-zinc-200 focus-visible:ring-offset-0 rounded-md">
 					{repositories.map((repos: PostGithubProps) => (
-						<p
-							className="bg-primary/10 rounded-md p-2 mt-2 mr-4"
+						<div
+							className="flex items-center gap-2 bg-primary/10 rounded-md mt-2 mr-4 p-2"
 							key={repos.name}
 						>
-                🔘 {repos.name}
-						</p>
+							<div className="rounded-full size-3 bg-foreground"/>
+							<p className="">{repos.name}</p>
+						</div>
 					))}
 				</div>
 			</footer>
