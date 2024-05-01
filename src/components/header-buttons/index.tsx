@@ -8,7 +8,7 @@ export function HeaderButtons() {
 	const { setTheme } = useTheme()
   
 	return (
-		<div className="flex gap-3">
+		<div className="flex gap-3 mr-3 lg:mr-0">
 			<Button
 				onClick={() => {setTheme("black")}}
 				variant="actions"
