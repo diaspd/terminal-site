@@ -92,7 +92,7 @@ export function HomeInput() {
 				{...register("input")}
 				type="text"
 				required
-				className="black:invisible border-0 rounded-none focus-visible:rounded-md animate-pulse valid:animate-none valid:border-0 focus-within:border-0 border-foreground border-l-4 text-2xl text-foreground"
+				className="black:invisible border-0 rounded-none focus-visible:rounded-md animate-pulse valid:animate-none focus:animate-none valid:border-0 focus-within:border-0 focus-within:ring-0 border-foreground border-l-4 text-2xl text-foreground px-0"
 			/>
 
 			<datalist id="search-suggestions">

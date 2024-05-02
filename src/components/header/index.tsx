@@ -10,7 +10,7 @@ export function Header() {
 	const pathname = usePathname()
 
 	return (
-		<header className="grid md:flex items-center gap-1 lg:gap-32 bg-background p-4 sticky top-0 left-0 z-1 w-full text-white">
+		<header className="grid md:flex items-center gap-1 lg:gap-32 bg-background p-4 sticky top-0 left-0 z-10 w-full text-white">
 			{pathname === "/" ? (
 				<HeaderButtons />		
 			) : (
