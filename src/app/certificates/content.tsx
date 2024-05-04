@@ -1,71 +1,44 @@
-import * as Dialog from "@radix-ui/react-dialog"
-import { X }from "lucide-react"
-import Image, { StaticImageData } from "next/image"
-
+import { Button } from "@/components/ui/button"
+import {
+	Dialog,
+	DialogContent,
+	DialogDescription,
+	DialogFooter,
+	DialogHeader,
+	DialogTitle,
+	DialogTrigger,
+} from "@/components/ui/dialog"
 import { LinkUi } from "@/components/ui/link-ui"
 
-interface ContentProps{
-  title: string
-  description: string
-  url?: string
-  photoUrl: StaticImageData
+interface ContentProps {
+	title: string
+	description: string
+	url?: string
 }
 
-export function Content({title, description, url, photoUrl}: ContentProps) {
+export function Content({title, description, url}: ContentProps) {
 	return (
-		<Dialog.Portal>
-			<Dialog.Overlay className="data-[state=open]:animate-overlayShow fixed inset-0 backdrop-blur-md" />
-			
-			<Dialog.Content className="data-[state=open]:animate-contentShow fixed top-[50%] left-[50%] max-h-[50vh] w-11/12 lg:max-w-3xl translate-x-[-50%] translate-y-[-50%] rounded bg-background p-6 divide-y-2 overflow-auto md:max-h-[60vh] scrollbar-thin scrollbar-track-transparent scrollbar-thumb-foreground">
+		<Dialog>
+			<DialogTrigger asChild>
+				<Button variant="outline">{title}</Button>
+			</DialogTrigger>
 
-				<header className="bg-clip-border divide-muted-foreground border-muted-foreground pb-5 h-full">
-					<Image 
-						src={photoUrl} 
-						width={600} 
-						height={400} 
-						alt="" 
-						draggable={false}
-						loading="eager"
-						priority 
-						className="w-11/12 h-96 hidden lg:flex select-none" 
-					/>
-					
-					<Dialog.Close className="absolute top-5 right-5 inline-flex h-6 w-6 appearance-none items-center justify-center rounded-lg focus:shadow-[0_0_0_2px] hover:text-muted-foreground transition-all duration-200" aria-label="Close">
-						<X size={24}/>
-					</Dialog.Close>
-				</header>
-
-				<div className="mb-6 lg:flex grid gap-3 py-2 pt-5">
-					{url ? (
-						<>
-							<p className="w-full text-left text-xl whitespace-nowrap select-none">
-								Link to Certificate:
-							</p>
-
-							<LinkUi 
-								target="_blank" 
-								className="whitespace-nowrap ml-0"
-								url={url}
-							>
-								{title}
-							</LinkUi>
-						</>
-					): (
-						<p className="select-none whitespace-nowrap text-xl rounded border-2 border-zinc-800 focus:border-zinc-500">
-							{title}
-						</p>  
-					)}
-				</div>
-
-				<section className="mb-6 lg:flex grid gap-5 pt-5">
-					<p className="w-full text-left text-xl select-none">
-        Learned:
-					</p>
-					<span className="text-foreground mt-1">
+			<DialogContent>
+				<DialogHeader>
+					<DialogTitle>{title}</DialogTitle>
+					<DialogDescription className="pt-2">
 						{description}
-					</span>
-				</section>
-			</Dialog.Content>
-		</Dialog.Portal>
+					</DialogDescription>
+				</DialogHeader>
+				
+				{url && (
+					<DialogFooter className="mt-4">
+						<LinkUi url={url} target="_blank">
+						Link to certificate
+						</LinkUi>
+					</DialogFooter>
+				)}
+			</DialogContent>
+		</Dialog>
 	)
 }
