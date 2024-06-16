@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import { Button } from '@/components/ui/button'
 import {
 	Dialog,
 	DialogContent,
@@ -7,8 +7,8 @@ import {
 	DialogHeader,
 	DialogTitle,
 	DialogTrigger,
-} from "@/components/ui/dialog"
-import { LinkUi } from "@/components/ui/link-ui"
+} from '@/components/ui/dialog'
+import { LinkUi } from '@/components/ui/link-ui'
 
 interface ContentProps {
 	title: string

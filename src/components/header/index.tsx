@@ -1,17 +1,17 @@
-"use client"
+'use client'
 
-import { ArrowLeft } from "lucide-react"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { ArrowLeft } from 'lucide-react'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
-import { HeaderButtons } from "../header-buttons"
+import { HeaderButtons } from '../header-buttons'
 
 export function Header() {
 	const pathname = usePathname()
 
 	return (
 		<header className="grid md:flex items-center gap-1 lg:gap-32 bg-background p-4 sticky top-0 left-0 z-10 w-full text-white">
-			{pathname === "/" ? (
+			{pathname === '/' ? (
 				<HeaderButtons />		
 			) : (
 				<Link

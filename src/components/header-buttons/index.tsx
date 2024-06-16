@@ -1,8 +1,8 @@
-"use client"
+'use client'
 
-import { useTheme } from "next-themes"
+import { useTheme } from 'next-themes'
 
-import { Button } from "../ui/button"
+import { Button } from '../ui/button'
 
 export function HeaderButtons() {
 	const { setTheme } = useTheme()
@@ -10,7 +10,7 @@ export function HeaderButtons() {
 	return (
 		<div className="flex gap-3 mr-3 lg:mr-0">
 			<Button
-				onClick={() => {setTheme("black")}}
+				onClick={() => {setTheme('black')}}
 				variant="actions"
 				size="xm"
 				className="bg-red-500 hover:bg-red-700"
@@ -23,7 +23,7 @@ export function HeaderButtons() {
 			/>
 
 			<Button
-				onClick={() => {setTheme("dark")}}
+				onClick={() => {setTheme('dark')}}
 				variant="actions"
 				size="xm"
 				className="bg-lime-400 hover:bg-lime-600"

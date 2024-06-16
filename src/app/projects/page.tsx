@@ -1,8 +1,8 @@
-import { Compiler } from "@/components/compiler"
-import { LinkUi } from "@/components/ui/link-ui"
+import { Compiler } from '@/components/compiler'
+import { LinkUi } from '@/components/ui/link-ui'
 
 export const metadata = {
-	title: "Projects",
+	title: 'Projects',
 }
 
 export default function Projects() {

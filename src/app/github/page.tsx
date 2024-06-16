@@ -1,9 +1,9 @@
 
-import { Compiler } from "@/components/compiler"
-import { LinkUi } from "@/components/ui/link-ui"
+import { Compiler } from '@/components/compiler'
+import { LinkUi } from '@/components/ui/link-ui'
 
 export const metadata = {
-	title: "Git hub",
+	title: 'Git hub',
 }
 
 export interface PostGithubProps {
@@ -11,7 +11,7 @@ export interface PostGithubProps {
 }
 
 export default async function Github() {
-	const response = await fetch("https://api.github.com/users/diaspd/repos", {
+	const response = await fetch('https://api.github.com/users/diaspd/repos', {
 		next: {
 			revalidate: 60 * 60 * 72, // 72 hours
 		},
@@ -32,7 +32,7 @@ export default async function Github() {
 							url="https://github.com/diaspd"
 							target="blank"
 						>
-							<span>{" "}GitHub</span> 
+							<span>{' '}GitHub</span> 
 						</LinkUi>
 					</span>
 				</div>

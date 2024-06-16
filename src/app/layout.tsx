@@ -1,26 +1,26 @@
-import "../styles/global.css"
+import '../styles/global.css'
 
-import type { Metadata } from "next"
-import { Prompt } from "next/font/google"
-import { Toaster } from "sonner"
+import type { Metadata } from 'next'
+import { Prompt } from 'next/font/google'
+import { Toaster } from 'sonner'
 
-import { Header } from "@/components/header"
-import { ThemeProvider } from "@/components/theme/theme-provider"
-import { ThemeToggle } from "@/components/theme/theme-toggle"
+import { Header } from '@/components/header'
+import { ThemeProvider } from '@/components/theme/theme-provider'
+import { ThemeToggle } from '@/components/theme/theme-toggle'
 
-const prompt = Prompt({ subsets: ["latin"], weight: ["100", "200", "400", "500", "600", "700", "800", "900"], variable: "--font-prompt" })
+const prompt = Prompt({ subsets: ['latin'], weight: ['100', '200', '400', '500', '600', '700', '800', '900'], variable: '--font-prompt' })
 
 export const metadata: Metadata = {
 	title: {
-		template: "%s | Terminal",
-		default: "Terminal",
+		template: '%s | Terminal',
+		default: 'Terminal',
 	},
 	icons: {
-		icon: "https://github.com/diaspd.png"
+		icon: 'https://github.com/diaspd.png'
 	},
-	metadataBase: new URL("https://pedro-dias.vercel.app/"),
+	metadataBase: new URL('https://pedro-dias.vercel.app/'),
 	description:
-	"My personal website for people discover more about me Pedro Dias, hope you enjoy !! react reactjs pedrodiasreactjs reactnative javascript js nodejs frontend backend fullstack mobile AI pedro dias reactjs",
+	'My personal website for people discover more about me Pedro Dias, hope you enjoy !! react reactjs pedrodiasreactjs reactnative javascript js nodejs frontend backend fullstack mobile AI pedro dias reactjs',
 }
 
 export default function RootLayout({children}: { children: React.ReactNode}) {
@@ -33,7 +33,7 @@ export default function RootLayout({children}: { children: React.ReactNode}) {
 					defaultTheme="system"
 					enableSystem
 					disableTransitionOnChange
-					themes={["dark", "light", "black"]}
+					themes={['dark', 'light', 'black']}
 				>
 					<Toaster invert position="bottom-right" />
 

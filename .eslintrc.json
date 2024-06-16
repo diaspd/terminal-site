@@ -29,14 +29,10 @@
     "react/prop-types": [2, {
       "ignore": ["className", "checked", "sideOffset", "type"]
     }],
-    
+    "quotes": [2, "single", { "avoidEscape": true }],
     "indent": [
         "error",
         "tab"
-    ],
-    "quotes": [
-        "error",
-        "double"
     ],
     "semi": [
         "error",

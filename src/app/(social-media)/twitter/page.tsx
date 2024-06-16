@@ -1,8 +1,8 @@
-import { Compiler } from "@/components/compiler"
-import { LinkUi } from "@/components/ui/link-ui"
+import { Compiler } from '@/components/compiler'
+import { LinkUi } from '@/components/ui/link-ui'
 
 export const metadata = {
-	title: "Twitter",
+	title: 'Twitter',
 }
 
 export default function Twitter() {
@@ -14,7 +14,7 @@ export default function Twitter() {
 				<p className="text-2xl font-semibold">~\</p>
 				<div className="p-1">
 					<span className="text-xl">
-              To access my Twitter use this link: {" "}
+              To access my Twitter use this link: {' '}
 						<LinkUi url="https://twitter.com/diaspdr_1" variant="move" target="blank">
               Twitter
 						</LinkUi>

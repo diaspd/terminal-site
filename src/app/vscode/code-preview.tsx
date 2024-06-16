@@ -1,10 +1,10 @@
-"use client"
+'use client'
 
-import { Check, Copy } from "lucide-react"
-import { useState } from "react"
-import { toast } from "sonner"
+import { Check, Copy } from 'lucide-react'
+import { useState } from 'react'
+import { toast } from 'sonner'
 
-import { Compiler } from "@/components/compiler"
+import { Compiler } from '@/components/compiler'
 
 interface CodePreviewProps {
   code: string
@@ -19,7 +19,7 @@ export function CodePreview({ code, raw }: CodePreviewProps) {
 		navigator.clipboard.writeText(raw)
 		setCopiedToClipboard(true)
 		setTimeout(() => setCopiedToClipboard(false), 2200)
-		toast.success("Copied!")
+		toast.success('Copied!')
 	}
 
 	return (

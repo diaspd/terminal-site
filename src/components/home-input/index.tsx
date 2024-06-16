@@ -1,11 +1,11 @@
-"use client"
+'use client'
 
-import { zodResolver } from "@hookform/resolvers/zod"
-import { useRouter } from "next/navigation"
-import { useForm } from "react-hook-form"
-import { z } from "zod"
+import { zodResolver } from '@hookform/resolvers/zod'
+import { useRouter } from 'next/navigation'
+import { useForm } from 'react-hook-form'
+import { z } from 'zod'
 
-import { Input } from "../ui/input"
+import { Input } from '../ui/input'
 
 const inputFormSchema = z.object({
 	input: z.string(),
@@ -22,62 +22,62 @@ export function HomeInput() {
 
 	function handleSubmitInput(data: FormInput) {
 		switch (data.input) {
-		case "github":
-			router.push("/github")
+		case 'github':
+			router.push('/github')
 			break
-		case "GITHUB":
-			router.push("/github")
+		case 'GITHUB':
+			router.push('/github')
 			break
-		case "instagram":
-			router.push("/instagram")
+		case 'instagram':
+			router.push('/instagram')
 			break
-		case "INSTAGRAM":
-			router.push("/instagram")
+		case 'INSTAGRAM':
+			router.push('/instagram')
 			break
-		case "vscode config":
-			router.push("/vscode/settings")
+		case 'vscode config':
+			router.push('/vscode/settings')
 			break
-		case "VSCODE CONFIG":
-			router.push("/vscode/settings")
+		case 'VSCODE CONFIG':
+			router.push('/vscode/settings')
 			break
-		case "vscode extensions":
-			router.push("/vscode/extensions")
+		case 'vscode extensions':
+			router.push('/vscode/extensions')
 			break
-		case "VSCODE EXTENSIONS":
-			router.push("/vscode/extension")
+		case 'VSCODE EXTENSIONS':
+			router.push('/vscode/extension')
 			break
-		case "knowledge":
-			router.push("/knowledge")
+		case 'knowledge':
+			router.push('/knowledge')
 			break
-		case "KNOWLEDGE":
-			router.push("/knowledge")
+		case 'KNOWLEDGE':
+			router.push('/knowledge')
 			break
-		case "certificates":
-			router.push("/certificates")
+		case 'certificates':
+			router.push('/certificates')
 			break
-		case "CERTIFICATES":
-			router.push("/certificates")
+		case 'CERTIFICATES':
+			router.push('/certificates')
 			break
-		case "projects":
-			router.push("/projects")
+		case 'projects':
+			router.push('/projects')
 			break
-		case "PROJECTS":
-			router.push("/projects")
+		case 'PROJECTS':
+			router.push('/projects')
 			break
-		case "linkedin":
-			router.push("/linkedin")
+		case 'linkedin':
+			router.push('/linkedin')
 			break
-		case "LINKEDIN":
-			router.push("/linkedin")
+		case 'LINKEDIN':
+			router.push('/linkedin')
 			break
-		case "twitter":
-			router.push("/twitter")
+		case 'twitter':
+			router.push('/twitter')
 			break
-		case "TWITTER":
-			router.push("/twitter")
+		case 'TWITTER':
+			router.push('/twitter')
 			break
 		default:
-			router.push("/")
+			router.push('/')
 		}
 	}
 
@@ -89,7 +89,7 @@ export function HomeInput() {
 
 			<Input
 				list="search-suggestions"
-				{...register("input")}
+				{...register('input')}
 				type="text"
 				required
 				className="black:invisible border-0 rounded-none focus-visible:rounded-md animate-pulse valid:animate-none focus:animate-none valid:border-0 focus-within:border-0 focus-within:ring-0 border-foreground border-l-4 text-2xl text-foreground px-0"

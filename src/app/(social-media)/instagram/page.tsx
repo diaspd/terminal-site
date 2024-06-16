@@ -1,8 +1,8 @@
-import { Compiler } from "@/components/compiler"
-import { LinkUi } from "@/components/ui/link-ui"
+import { Compiler } from '@/components/compiler'
+import { LinkUi } from '@/components/ui/link-ui'
 
 export const metadata = {
-	title: "Instagram",
+	title: 'Instagram',
 }
 
 export default function Instagram() {
@@ -14,7 +14,7 @@ export default function Instagram() {
 				<p className="text-2xl font-semibold">~\</p>
 				<div className="p-1">
 					<span className="text-xl">
-              To access my Instagram use this link: {" "}
+              To access my Instagram use this link: {' '}
 						<LinkUi url="https://www.instagram.com/dias_pdr/" variant="move" target="blank">
 							<span>Instagram</span>
 						</LinkUi>

@@ -1,8 +1,8 @@
-"use client"
+'use client'
 
-import { Accordion } from "@/components/ui/accordion"
+import { Accordion } from '@/components/ui/accordion'
 
-import { KnowledgeItem } from "./knowledge-item"
+import { KnowledgeItem } from './knowledge-item'
 
 export function KnowledgeContent() {
 	return (

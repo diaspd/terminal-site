@@ -1,10 +1,10 @@
-"use client"
+'use client'
 
 import {
 	AccordionContent,
 	AccordionItem,
 	AccordionTrigger,
-} from "@/components/ui/accordion"
+} from '@/components/ui/accordion'
 
 interface KnowledgeItemProps {
   title: string;

@@ -1,7 +1,7 @@
-import { HomeInput } from "@/components/home-input"
+import { HomeInput } from '@/components/home-input'
 
 export const metadata = {
-	title: "Home",
+	title: 'Home',
 }
 
 export default function Home() {
