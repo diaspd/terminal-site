@@ -50,7 +50,7 @@ export default function Projects() {
 
 				<LinkUi 
 					target="_blank" 
-					url="https://github-blog-e7ik2ctob-diaspd.vercel.app/" 
+					url="https://github-blog-diaspd.vercel.app/" 
 					className="block"
 				> Github Blog
 				</LinkUi>
