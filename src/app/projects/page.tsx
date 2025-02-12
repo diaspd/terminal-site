@@ -12,6 +12,13 @@ export default function Projects() {
 
 			<div className="bg-foreground/10 rounded-md md:ml-14 px-12 lg:px-4 py-4 space-y-4 w-fit m-5">
 				<span className="text-xl font-semibold">Projects online:</span>
+
+				<LinkUi 
+					target="_blank" 
+					url="https://project-manager-saas.vercel.app/auth/sign-in" 
+					className="block"
+				> Project Manager SAAS
+				</LinkUi>
 			
 				<LinkUi 
 					target="_blank" 
