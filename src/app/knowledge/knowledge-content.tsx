@@ -37,13 +37,15 @@ export function KnowledgeContent() {
 				title="Used on Projects Front end & Mobile"
 				description="useState, useEffect, useContext, UseCallback, useMemo, useQuery, 
 				React hook Form, Immutability, ESLint, React Router DOM, Reducer,
-				JSON Server, Axios, SSG, SSR, SEO, RadixUi, Zod, Cookies, OAuth, Redux, Zustand, Local Storage"
+				JSON Server, Axios, SSG, SSR, SEO, RadixUi, Zod, Cookies, OAuth, Redux, Zustand, Local Storage, ShadcnUI, Jest, Bare workflow, Managed workflow, MSW Js, PlayWright, 
+				Skia, React Native Gesture Handler, Native Base
+				"
 				value="item-4"
 			/>
 
 			<KnowledgeItem 
 				title="Used on Projects Back end"
-				description="DDD"
+				description="Http Protocols, Node streams"
 				value="item-5"
 			/>
 		</Accordion>
