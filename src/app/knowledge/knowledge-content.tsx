@@ -38,7 +38,7 @@ export function KnowledgeContent() {
 				description="useState, useEffect, useContext, UseCallback, useMemo, useQuery, 
 				React hook Form, Immutability, ESLint, React Router DOM, Reducer,
 				JSON Server, Axios, SSG, SSR, SEO, RadixUi, Zod, Cookies, OAuth, Redux, Zustand, Local Storage, ShadcnUI, Jest, Bare workflow, Managed workflow, MSW Js, PlayWright, 
-				Skia, React Native Gesture Handler, Native Base
+				Skia, Expo av, Expo Haptics, React Native Gesture Handler, Native Base.
 				"
 				value="item-4"
 			/>
