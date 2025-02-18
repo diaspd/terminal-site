@@ -26,6 +26,13 @@ export default function Projects() {
 					className="block"
 				> Book Wise
 				</LinkUi>
+
+				<LinkUi 
+					target="_blank" 
+					url="https://redux-zustand-player.vercel.app/" 
+					className="block"
+				> Redux Zustand player
+				</LinkUi>
 			
 				<LinkUi 
 					target="_blank" 
