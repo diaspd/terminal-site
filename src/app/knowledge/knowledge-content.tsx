@@ -21,7 +21,7 @@ export function KnowledgeContent() {
 
 			<KnowledgeItem 
 				title="Back-end"
-				description="Node.js, Nestjs, Java, Prisma, SQL, Elixer, Python."
+				description="Node.js, Nestjs, Fastify, Java, Prisma, SQL, Elixer, Python."
 				value="item-2"
 			/>
 
@@ -29,7 +29,7 @@ export function KnowledgeContent() {
 				title="Other Tecnologies"
 				description=" Git, Github, TailwindCss, StyledComponents, Stitches, Native
 				Wind, Expo, Axe (accessibility), Firebase, Figma, Design
-				System, Fastify, AI"
+				System, AI, Knex"
 				value="item-3"
 			/>
 
