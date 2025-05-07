@@ -2,6 +2,7 @@
 
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useRouter } from 'next/navigation'
+import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 
@@ -15,97 +16,78 @@ type FormInput = z.infer<typeof inputFormSchema>
 
 export function HomeInput() {
 	const router = useRouter()
+	const [messages, setMessages] = useState<string[]>([])
+	const [isDisabled, setIsDisabled] = useState(false)
 
-	const { register, handleSubmit } = useForm<FormInput>({
-		resolver: zodResolver(inputFormSchema)
+	const { register, handleSubmit, reset } = useForm<FormInput>({
+		resolver: zodResolver(inputFormSchema),
 	})
 
 	function handleSubmitInput(data: FormInput) {
-		switch (data.input) {
-		case 'github':
-			router.push('/github')
-			break
-		case 'GITHUB':
-			router.push('/github')
-			break
-		case 'instagram':
-			router.push('/instagram')
-			break
-		case 'INSTAGRAM':
-			router.push('/instagram')
-			break
-		case 'vscode config':
-			router.push('/vscode/settings')
-			break
-		case 'VSCODE CONFIG':
-			router.push('/vscode/settings')
-			break
-		case 'vscode extensions':
-			router.push('/vscode/extensions')
-			break
-		case 'VSCODE EXTENSIONS':
-			router.push('/vscode/extension')
-			break
-		case 'knowledge':
-			router.push('/knowledge')
-			break
-		case 'KNOWLEDGE':
-			router.push('/knowledge')
-			break
-		case 'certificates':
-			router.push('/certificates')
-			break
-		case 'CERTIFICATES':
-			router.push('/certificates')
-			break
-		case 'projects':
-			router.push('/projects')
-			break
-		case 'PROJECTS':
-			router.push('/projects')
-			break
-		case 'linkedin':
-			router.push('/linkedin')
-			break
-		case 'LINKEDIN':
-			router.push('/linkedin')
-			break
-		case 'twitter':
-			router.push('/twitter')
-			break
-		case 'TWITTER':
-			router.push('/twitter')
-			break
-		default:
-			router.push('/')
-		}
+		const logMessages = ['~\\ Compiling...', '~\\ Success ✓', '~\\ Redirecting...']
+
+		setMessages([])
+		setIsDisabled(true)
+		reset()
+	
+		logMessages.forEach((msg, index) => {
+			setTimeout(() => {
+				setMessages((prev) => [...prev, msg])
+			}, index * 1000) 
+		})
+	
+		setTimeout(() => {
+			const input = data.input.toLowerCase()
+			const routes: Record<string, string> = {
+				github: '/github',
+				instagram: '/instagram',
+				'vscode config': '/vscode/settings',
+				'vscode extensions': '/vscode/extensions',
+				knowledge: '/knowledge',
+				certificates: '/certificates',
+				projects: '/projects',
+				linkedin: '/linkedin',
+				twitter: '/twitter',
+			}
+	
+			const path = routes[input] || '/'
+			router.push(`${path}`)
+		}, logMessages.length * 1000 + 500)
 	}
+	
 
 	return (
-		<form onSubmit={handleSubmit(handleSubmitInput)}>
-			<label htmlFor="input" className="sr-only">
-				Ex: github
-			</label>
+		<div className="pl-4 text-foreground font-mono">
+			<div className="space-y-1 mb-4">
+				{messages.map((msg, i) => (
+					<p key={i} className="text-xl py-1.5">{msg}</p>
+				))}
+			</div>
 
-			<Input
-				list="search-suggestions"
-				{...register('input')}
-				type="text"
-				required
-				className="black:invisible border-0 rounded-none focus-visible:rounded-md animate-pulse valid:animate-none focus:animate-none valid:border-0 focus-within:border-0 focus-within:ring-0 border-foreground border-l-4 text-2xl text-foreground px-0"
-			/>
+			<form onSubmit={handleSubmit(handleSubmitInput)} className="flex items-center gap-2">
+				<span className="text-xl select-none">~\</span>
 
-			<datalist id="search-suggestions">
-				<option value="github" />
-				<option value="knowledge" />
-				<option value="projects" />
-				<option value="certificates" />
-				<option value="vscode config" />
-				<option value="vscode extensions" />
-				<option value="instagram" />
-				<option value="linkedin" />
-				<option value="twitter" />
-			</datalist>
-		</form>
+				<Input
+					{...register('input')}
+					list="search-suggestions"
+					type="text"
+					required
+					disabled={isDisabled}
+					className="black:invisible border-0 rounded-none focus-visible:rounded-md animate-pulse valid:animate-none focus:animate-none valid:border-0 focus-within:border-0 focus-within:ring-0 border-foreground border-l-4 text-xl text-foreground px-0"
+				/>
+
+				<datalist id="search-suggestions">
+					<option value="github" />
+					<option value="knowledge" />
+					<option value="projects" />
+					<option value="certificates" />
+					<option value="vscode config" />
+					<option value="vscode extensions" />
+					<option value="instagram" />
+					<option value="linkedin" />
+					<option value="twitter" />
+				</datalist>
+			</form>
+		</div>
 	)
 }
